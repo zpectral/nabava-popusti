@@ -37,7 +37,7 @@ console.log(jsonData);
 //let JSONold = fs.readFileSync("./monitors.json");
 //let monitors = JSON.parse(JSONold);
 var monitorsTable = new Tabulator("#example-table", {
-
+    ajaxURL: myFiles[0],
     height:"311px",
     columns:[
     {title:"Name", field:"name"},
