@@ -39,12 +39,5 @@ console.log(jsonData);
 var monitorsTable = new Tabulator("#example-table", {
     ajaxURL: myFiles[0],
     height:"311px",
-    columns:[
-    {title:"Name", field:"name"},
-    {title:"Progress", field:"progress", align:"right", sorter:"number"},
-    {title:"Gender", field:"gender"},
-    {title:"Rating", field:"rating", align:"center"},
-    {title:"Favourite Color", field:"col"},
-    ],
 });
 
