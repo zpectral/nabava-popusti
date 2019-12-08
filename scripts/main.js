@@ -40,6 +40,12 @@ console.log(jsonData);
 var monitorsTable = new Tabulator("#example-table", {
     ajaxURL: myFiles[0],
     height:"311px",
-    autoColumns:true,
+    //autoColumns:true,
+    columns:[
+        {title:"Info", field:"itemInfo", sorter:"string"},
+        {title:"Cijena", field:"itemPrice", sorter:"number"},
+        {title:"Popust %", field:"percentChange", sorter:"number"},
+        {title:"Promjena cijne", field:"priceChange", sorter:"number"},
+    ],
 });
 
