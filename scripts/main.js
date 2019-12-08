@@ -25,6 +25,7 @@ myFiles.forEach(function (file, i) {
         // will not necessarily come in order
         // so we can't use JSONdata.push(JSON.parse(responseText));
         // if the order doesn't matter, you can use push
+        console.log(responseText);
         jsonData[i] = JSON.parse(responseText);
         // or you could choose not to store it in an array.
         // whatever you decide to do with it, it is available as
@@ -32,7 +33,6 @@ myFiles.forEach(function (file, i) {
     })
 })
 
-console.log(jsonData);
 
 //let JSONold = fs.readFileSync("./monitors.json");
 //let monitors = JSON.parse(JSONold);
@@ -45,7 +45,7 @@ var monitorsTable = new Tabulator("#example-table", {
         {title:"Info", field:"itemInfo", sorter:"string"},
         {title:"Cijena", field:"itemPrice", sorter:"number"},
         {title:"Popust %", field:"percentChange", sorter:"number"},
-        {title:"Promjena cijne", field:"priceChange", sorter:"number"},
+        {title:"Razlika", field:"priceChange", sorter:"number"},
         {title:"Dodano", field:"dateAdded", sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
             outputFormat:"DD/MM/YYYY",
