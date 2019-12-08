@@ -46,6 +46,7 @@ var monitorsTable = new Tabulator("#example-table", {
         {title:"Cijena", field:"itemPrice", sorter:"number"},
         {title:"Popust %", field:"percentChange", sorter:"number"},
         {title:"Promjena cijne", field:"priceChange", sorter:"number"},
+        {title:"Dodano", field:"dateAdded", sorter:"date"},
     ],
 });
 
