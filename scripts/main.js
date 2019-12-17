@@ -12,7 +12,7 @@ var loadFile = function (filePath, done) {
     xhr.send();
 }
 // paths to all of your files
-var myFiles = [ "https://zpectral.github.io/nabava-popusti/data/monitors.json" ];
+var myFiles = [ "https://zpectral.github.io/nabava-popusti/data/monitori.json" ];
 // where you want to store the data
 var jsonData = [];
 // loop through each file
