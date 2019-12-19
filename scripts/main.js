@@ -12,7 +12,10 @@ var loadFile = function (filePath, done) {
     xhr.send();
 }
 // paths to all of your files
-var myFiles = [ "https://zpectral.github.io/nabava-popusti/data/monitori.json" ];
+var myFiles = [ "https://zpectral.github.io/nabava-popusti/data/monitori.json",
+                "https://zpectral.github.io/nabava-popusti/data/graficke-kartice.json",
+                "https://zpectral.github.io/nabava-popusti/data/misevi.json",
+                "https://zpectral.github.io/nabava-popusti/data/procesori.json" ];
 // where you want to store the data
 var jsonData = [];
 // loop through each file
@@ -53,11 +56,11 @@ var monitoriTable= new Tabulator("#monitori", {
         {title:"Popust %", field:"percentChange", align:"right", sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
-            symbol:" %",
-            symbolAfter:" %",
+            symbol:"%",
+            symbolAfter:"%",
             precision:0,
         }},
-        {title:"Razlika", field:"priceChange", align:"right", sorter:"number", formatter:"money", formatterParams:{
+        {title:"Ukupna promjena", field:"priceChange", align:"right", sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" kn",
@@ -68,7 +71,12 @@ var monitoriTable= new Tabulator("#monitori", {
             inputFormat:"DD-MM-YYYY",
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
-        }}
+        }},
+        {title:"Link", field:"itemLink", formatter:"link", formatterParams:{
+            label:"link",
+            urlField:"itemLink",
+            target:"_blank",
+}}
     ],
 });
 
