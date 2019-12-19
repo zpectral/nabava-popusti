@@ -84,7 +84,7 @@ var monitoriTable= new Tabulator("#monitori", {
 var monitoriTable= new Tabulator("#procesori", {
     ajaxURL: myFiles["procesori"],
     height:"311px",
-    layout:"fitData",
+    layout:"fitDatafill",
     //autoColumns:true,
     columns:[
         {title:"Info", field:"itemInfo", sorter:"string"},
@@ -126,7 +126,7 @@ var monitoriTable= new Tabulator("#procesori", {
 var monitoriTable= new Tabulator("#graficke-kartice", {
     ajaxURL: myFiles["graficke"],
     height:"311px",
-    layout:"fitData",
+    layout:"fitDatafill",
     //autoColumns:true,
     columns:[
         {title:"Info", field:"itemInfo", sorter:"string"},
