@@ -43,13 +43,25 @@ var monitoriTable= new Tabulator("#monitori", {
     //autoColumns:true,
     columns:[
         {title:"Info", field:"itemInfo", sorter:"string"},
-        {title:"Cijena", field:"itemPrice", align:"right", sorter:"number"},
-        {title:"Popust %", field:"percentChange", align:"right", sorter:"number"},
+        {title:"Cijena", field:"itemPrice", align:"right", sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" kn",
+            symbolAfter:" kn",
+            precision:0,
+        }},
+        {title:"Popust %", field:"percentChange", align:"right", sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" %",
+            symbolAfter:" %",
+            precision:0,
+        }},
         {title:"Razlika", field:"priceChange", align:"right", sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
-            symbol:"kn",
-            symbolAfter:"kn",
+            symbol:" kn",
+            symbolAfter:" kn",
             precision:0,
         }},
         {title:"Dodano", field:"dateAdded", align:"right", sorter:"date", formatter:"datetime", formatterParams:{
