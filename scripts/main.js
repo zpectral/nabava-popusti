@@ -80,6 +80,7 @@ var monitoriTable= new Tabulator("#monitori", {
     ],
 });
 
+
 var monitoriTable= new Tabulator("#procesori", {
     ajaxURL: myFiles["procesori"],
     height:"311px",
