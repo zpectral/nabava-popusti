@@ -37,18 +37,24 @@ myFiles.forEach(function (file, i) {
 //let JSONold = fs.readFileSync("./monitors.json");
 //let monitors = JSON.parse(JSONold);
 
-var monitorsTable = new Tabulator("#example-table", {
+var monitoriTable= new Tabulator("#monitori", {
     ajaxURL: myFiles[0],
     height:"311px",
     //autoColumns:true,
     columns:[
         {title:"Info", field:"itemInfo", sorter:"string"},
-        {title:"Cijena", field:"itemPrice", sorter:"number"},
-        {title:"Popust %", field:"percentChange", sorter:"number"},
-        {title:"Razlika", field:"priceChange", sorter:"number"},
-        {title:"Dodano", field:"dateAdded", sorter:"date", formatter:"datetime", formatterParams:{
+        {title:"Cijena", field:"itemPrice", align:"right", sorter:"number"},
+        {title:"Popust %", field:"percentChange", align:"right", sorter:"number"},
+        {title:"Razlika", field:"priceChange", align:"right", sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:"kn",
+            symbolAfter:"kn",
+            precision:0,
+        }},
+        {title:"Dodano", field:"dateAdded", align:"right", sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
-            outputFormat:"DD/MM/YYYY",
+            outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
         }}
     ],
