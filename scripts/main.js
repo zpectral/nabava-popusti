@@ -75,7 +75,7 @@ var monitoriTable= new Tabulator("#monitori", {
             symbolAfter:" kn",
             precision:0,
         }},
-        {title:"Promjena (%)", field:"percentChange", align:"right", width:100, sorter:"number", formatter:"money", formatterParams:{
+        {title:"Promjena", field:"percentChange", align:"right", width:100, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:"%",
@@ -89,12 +89,12 @@ var monitoriTable= new Tabulator("#monitori", {
             symbolAfter:" kn",
             precision:0,
         }},
-        {title:"Dodano", field:"dateAdded", align:"right", width:80, sorter:"date", formatter:"datetime", formatterParams:{
+        {title:"Dodano", field:"dateAdded", align:"right", width:100, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
         }},
-        {title:"Link", field:"itemLink", width:60, formatter:"link", formatterParams:{
+        {title:"Link", field:"itemLink", width:80, formatter:"link", formatterParams:{
             label:"link",
             urlField:"itemLink",
             target:"_blank",
