@@ -39,7 +39,7 @@ function notNeededAtm(arr) {
 //notNeededAtm(myFiles);
 
 // tab code
-function openCity(evt, targetid) {
+function openTab(evt, targetid) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -103,40 +103,40 @@ var monitoriTable= new Tabulator("#monitori", {
 });
 
 
-var procesoriTable= new Tabulator("#procesori", {
+var procesoriTable = new Tabulator("#procesori", {
     ajaxURL: myFiles["procesori"],
     height:"800px",
     layout:"fitColumns",
     //autoColumns:true,
     columns:[
-        {title:"Info", field:"itemInfo", sorter:"string"},
-        {title:"Cijena", field:"itemPrice", align:"right", sorter:"number", formatter:"money", formatterParams:{
+        {title:"Info", field:"itemInfo", sorter:"string", headerFilter:"input"},
+        {title:"Cijena", field:"itemPrice", align:"right", width:100, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" kn",
             symbolAfter:" kn",
             precision:0,
         }},
-        {title:"Popust %", field:"percentChange", align:"right", sorter:"number", formatter:"money", formatterParams:{
+        {title:"Promjena", field:"percentChange", align:"right", width:100, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:"%",
             symbolAfter:"%",
             precision:0,
         }},
-        {title:"Ukupna promjena", field:"priceChange", align:"right", sorter:"number", formatter:"money", formatterParams:{
+        {title:"Kretanje", field:"priceChange", align:"right", width:100, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" kn",
             symbolAfter:" kn",
             precision:0,
         }},
-        {title:"Dodano", field:"dateAdded", align:"right", sorter:"date", formatter:"datetime", formatterParams:{
+        {title:"Dodano", field:"dateAdded", align:"right", width:100, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
         }},
-        {title:"Link", field:"itemLink", formatter:"link", formatterParams:{
+        {title:"Link", field:"itemLink", width:80, formatter:"link", formatterParams:{
             label:"link",
             urlField:"itemLink",
             target:"_blank",
@@ -147,38 +147,38 @@ var procesoriTable= new Tabulator("#procesori", {
 
 var grafickeTable = new Tabulator("#graficke-kartice", {
     ajaxURL: myFiles["graficke"],
-    height:"311px",
+    height:"800px",
     layout:"fitColumns",
     //autoColumns:true,
     columns:[
-        {title:"Info", field:"itemInfo", sorter:"string"},
-        {title:"Cijena", field:"itemPrice", align:"right", sorter:"number", formatter:"money", formatterParams:{
+        {title:"Info", field:"itemInfo", sorter:"string", headerFilter:"input"},
+        {title:"Cijena", field:"itemPrice", align:"right", width:100, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" kn",
             symbolAfter:" kn",
             precision:0,
         }},
-        {title:"Popust %", field:"percentChange", align:"right", sorter:"number", formatter:"money", formatterParams:{
+        {title:"Promjena", field:"percentChange", align:"right", width:100, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:"%",
             symbolAfter:"%",
             precision:0,
         }},
-        {title:"Ukupna promjena", field:"priceChange", align:"right", sorter:"number", formatter:"money", formatterParams:{
+        {title:"Kretanje", field:"priceChange", align:"right", width:100, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" kn",
             symbolAfter:" kn",
             precision:0,
         }},
-        {title:"Dodano", field:"dateAdded", align:"right", sorter:"date", formatter:"datetime", formatterParams:{
+        {title:"Dodano", field:"dateAdded", align:"right", width:100, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
         }},
-        {title:"Link", field:"itemLink", formatter:"link", formatterParams:{
+        {title:"Link", field:"itemLink", width:80, formatter:"link", formatterParams:{
             label:"link",
             urlField:"itemLink",
             target:"_blank",
@@ -189,38 +189,38 @@ var grafickeTable = new Tabulator("#graficke-kartice", {
 
 var miseviTable = new Tabulator("#misevi", {
     ajaxURL: myFiles["misevi"],
-    height:"311px",
+    height:"800px",
     layout:"fitColumns",
     //autoColumns:true,
     columns:[
-        {title:"Info", field:"itemInfo", sorter:"string"},
-        {title:"Cijena", field:"itemPrice", align:"right", sorter:"number", formatter:"money", formatterParams:{
+        {title:"Info", field:"itemInfo", sorter:"string", headerFilter:"input"},
+        {title:"Cijena", field:"itemPrice", align:"right", width:100, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" kn",
             symbolAfter:" kn",
             precision:0,
         }},
-        {title:"Popust %", field:"percentChange", align:"right", sorter:"number", formatter:"money", formatterParams:{
+        {title:"Promjena", field:"percentChange", align:"right", width:100, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:"%",
             symbolAfter:"%",
             precision:0,
         }},
-        {title:"Ukupna promjena", field:"priceChange", align:"right", sorter:"number", formatter:"money", formatterParams:{
+        {title:"Kretanje", field:"priceChange", align:"right", width:100, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" kn",
             symbolAfter:" kn",
             precision:0,
         }},
-        {title:"Dodano", field:"dateAdded", align:"right", sorter:"date", formatter:"datetime", formatterParams:{
+        {title:"Dodano", field:"dateAdded", align:"right", width:100, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
         }},
-        {title:"Link", field:"itemLink", formatter:"link", formatterParams:{
+        {title:"Link", field:"itemLink", width:80, formatter:"link", formatterParams:{
             label:"link",
             urlField:"itemLink",
             target:"_blank",
