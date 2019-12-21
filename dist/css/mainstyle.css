@@ -36,11 +36,11 @@
     padding-right: 20px;
 }
 
-tabulator-header-filter {
+.tabulator-header-filter {
     display: inline-block;
 }
 
-tabulator-header-filter > input {
+.tabulator-header-filter > input {
     padding: 0px;
 }
 
