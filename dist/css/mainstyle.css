@@ -38,9 +38,11 @@
 
 .tabulator-header-filter {
     display: inline-block;
+    text-align: left;
 }
 
 .tabulator-header-filter > input {
-    padding: 0px;
+    padding: 0px !important;
+    width: 90% !important;
 }
 
