@@ -6,14 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nabava popusti</title>
     <link href="dist/css/tabulator.min.css" rel="stylesheet">
+    <link href="dist/css/mainstyle.css" rel="stylesheet">
     <script type="text/javascript" src="dist/js/moment.js"></script>
     <script type="text/javascript" src="dist/js/tabulator.min.js"></script>
     <script type="text/javascript" src="scripts/main.js" defer></script>
 </head>
 <body>
-    <div id="monitori"></div>
-    <div id="procesori"></div>
-    <div id="graficke-kartice"></div>
-    <div id="misevi"></div>
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'procesori')">Procesori</button>
+        <button class="tablinks" onclick="openCity(event, 'monitori')">Monitori</button>
+        <button class="tablinks" onclick="openCity(event, 'graficke-kartice')">Grafičke kartice</button>
+        <button class="tablinks" onclick="openCity(event, 'misevi')">Miševi</button>
+    </div>
+
+    <!-- Tab content -->
+    <div class="tabcontet" id="procesori"></div>
+    <div class="tabcontet" id="monitori"></div>
+    <div class="tabcontet" id="graficke-kartice"></div>
+    <div class="tabcontet" id="misevi"></div>
 </body>
 </html>

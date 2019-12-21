@@ -38,11 +38,34 @@ function notNeededAtm(arr) {
 
 //notNeededAtm(myFiles);
 
+// tab code
+function openCity(evt, targetid) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(targetid).style.display = "block";
+  evt.currentTarget.className += " active";
+} 
+
+
 
 var monitoriTable= new Tabulator("#monitori", {
     ajaxURL: myFiles["monitori"],
     height:"311px",
-    layout:"fitData",
+    layout:"fitColumns",
     //autoColumns:true,
     columns:[
         {title:"Info", field:"itemInfo", sorter:"string"},
@@ -81,10 +104,10 @@ var monitoriTable= new Tabulator("#monitori", {
 });
 
 
-var monitoriTable= new Tabulator("#procesori", {
+var procesoriTable= new Tabulator("#procesori", {
     ajaxURL: myFiles["procesori"],
     height:"311px",
-    layout:"fitDatafill",
+    layout:"fitColumns",
     //autoColumns:true,
     columns:[
         {title:"Info", field:"itemInfo", sorter:"string"},
@@ -123,10 +146,10 @@ var monitoriTable= new Tabulator("#procesori", {
 });
 
 
-var monitoriTable= new Tabulator("#graficke-kartice", {
+var grafickeTable = new Tabulator("#graficke-kartice", {
     ajaxURL: myFiles["graficke"],
     height:"311px",
-    layout:"fitDatafill",
+    layout:"fitColumns",
     //autoColumns:true,
     columns:[
         {title:"Info", field:"itemInfo", sorter:"string"},
@@ -165,10 +188,10 @@ var monitoriTable= new Tabulator("#graficke-kartice", {
 });
 
 
-var monitoriTable= new Tabulator("#misevi", {
+var miseviTable = new Tabulator("#misevi", {
     ajaxURL: myFiles["misevi"],
     height:"311px",
-    layout:"fitData",
+    layout:"fitColumns",
     //autoColumns:true,
     columns:[
         {title:"Info", field:"itemInfo", sorter:"string"},
