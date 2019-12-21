@@ -68,33 +68,33 @@ var monitoriTable= new Tabulator("#monitori", {
     //autoColumns:true,
     columns:[
         {title:"Info", field:"itemInfo", sorter:"string"},
-        {title:"Cijena", field:"itemPrice", align:"right", width:200, sorter:"number", formatter:"money", formatterParams:{
+        {title:"Cijena", field:"itemPrice", align:"right", width:100, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" kn",
             symbolAfter:" kn",
             precision:0,
         }},
-        {title:"Popust %", field:"percentChange", align:"right", width:200, sorter:"number", formatter:"money", formatterParams:{
+        {title:"Zadnja promjena (%)", field:"percentChange", align:"right", width:100, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:"%",
             symbolAfter:"%",
             precision:0,
         }},
-        {title:"Ukupna promjena", field:"priceChange", align:"right", width:200, sorter:"number", formatter:"money", formatterParams:{
+        {title:"Ukupna promjena", field:"priceChange", align:"right", width:100, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" kn",
             symbolAfter:" kn",
             precision:0,
         }},
-        {title:"Dodano", field:"dateAdded", align:"right", width:200, sorter:"date", formatter:"datetime", formatterParams:{
+        {title:"Dodano", field:"dateAdded", align:"right", width:100, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
         }},
-        {title:"Link", field:"itemLink", width:100, formatter:"link", formatterParams:{
+        {title:"Link", field:"itemLink", width:80, formatter:"link", formatterParams:{
             label:"link",
             urlField:"itemLink",
             target:"_blank",
