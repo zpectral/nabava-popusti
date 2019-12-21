@@ -61,7 +61,6 @@ function openCity(evt, targetid) {
 } 
 
 
-
 var monitoriTable= new Tabulator("#monitori", {
     ajaxURL: myFiles["monitori"],
     height:"311px",

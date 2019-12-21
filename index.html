@@ -14,23 +14,23 @@
 <body>
     <!-- Tab links -->
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'procesori')">Procesori</button>
-        <button class="tablinks" onclick="openCity(event, 'monitori')">Monitori</button>
-        <button class="tablinks" onclick="openCity(event, 'graficke-kartice')">Grafičke kartice</button>
-        <button class="tablinks" onclick="openCity(event, 'misevi')">Miševi</button>
+        <button class="tablinks" onclick="openCity(event, 'procParent')">Procesori</button>
+        <button class="tablinks" onclick="openCity(event, 'monParent')">Monitori</button>
+        <button class="tablinks" onclick="openCity(event, 'grafParent')">Grafičke kartice</button>
+        <button class="tablinks" onclick="openCity(event, 'misParent')">Miševi</button>
     </div>
 
     <!-- Tab content -->
-    <div class="tabcontet">
+    <div  id="procParent" class="tabcontent">
         <div id="procesori"></div>
     </div>
-    <div class="tabcontet">
+    <div id="monParent" class="tabcontent">
         <div id="monitori"></div>
     </div>
-    <div class="tabcontet">
+    <div id="grafParent" class="tabcontent">
         <div id="graficke-kartice"></div>
     </div>
-    <div class="tabcontet">
+    <div id="misParent" class="tabcontent">
         <div id="misevi"></div>
     </div>
 </body>
