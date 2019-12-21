@@ -30,3 +30,17 @@
 .tabcontent {
   display: none;
 } 
+
+.tabulator-col-title {
+    display: inline;
+    padding-right: 20px;
+}
+
+tabulator-header-filter {
+    display: inline-block;
+}
+
+tabulator-header-filter > input {
+    padding: 0px;
+}
+
