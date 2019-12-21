@@ -67,7 +67,7 @@ var monitoriTable= new Tabulator("#monitori", {
     layout:"fitColumns",
     //autoColumns:true,
     columns:[
-        {title:"Info", field:"itemInfo", sorter:"string"},
+        {title:"Info", field:"itemInfo", sorter:"string", headerFilter:"input"},
         {title:"Cijena", field:"itemPrice", align:"right", width:100, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
