@@ -37,12 +37,12 @@
 }
 
 .tabulator-header-filter {
-    display: inline-block;
-    text-align: left;
+    display: inline-block !important;
+    text-align: left !important;
+    width: 90% !important;
 }
 
 .tabulator-header-filter > input {
     padding: 0px !important;
-    width: 90% !important;
 }
 
