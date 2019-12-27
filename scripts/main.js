@@ -12,7 +12,12 @@ var loadFile = function (filePath, done) {
 var myFiles = { monitori: "https://zpectral.github.io/nabava-popusti/data/monitori.json",
                 graficke: "https://zpectral.github.io/nabava-popusti/data/graficke-kartice.json",
                 misevi: "https://zpectral.github.io/nabava-popusti/data/misevi.json",
-                procesori: "https://zpectral.github.io/nabava-popusti/data/procesori.json" };
+                procesori: "https://zpectral.github.io/nabava-popusti/data/procesori.json",
+                tipkovnice: "https://zpectral.github.io/nabava-popusti/data/tipkovnice.json",
+                ram: "https://zpectral.github.io/nabava-popusti/data/radna-memorija-ram.json",
+                sisaci: "https://zpectral.github.io/nabava-popusti/data/sisaci-i-trimeri.json",
+                slusalice: "https://zpectral.github.io/nabava-popusti/data/gaming-slusalice.json" 
+            };
 
 // where you want to store the data
 var jsonData = [];
@@ -99,7 +104,7 @@ var monitoriTable= new Tabulator("#monitori", {
             symbolAfter:"%",
             precision:0,
         }},
-        {title:"Kretanje", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
+        {title:"Razlika", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" kn",
@@ -141,7 +146,7 @@ var procesoriTable = new Tabulator("#procesori", {
             symbolAfter:"%",
             precision:0,
         }},
-        {title:"Kretanje", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
+        {title:"Razlika", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" kn",
@@ -183,7 +188,7 @@ var grafickeTable = new Tabulator("#graficke-kartice", {
             symbolAfter:"%",
             precision:0,
         }},
-        {title:"Kretanje", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
+        {title:"Razlika", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" kn",
@@ -225,7 +230,175 @@ var miseviTable = new Tabulator("#misevi", {
             symbolAfter:"%",
             precision:0,
         }},
-        {title:"Kretanje", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
+        {title:"Razlika", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" kn",
+            symbolAfter:" kn",
+            precision:0,
+        }},
+        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
+        }},
+        {title:"Link", field:"itemLink", width:70, responsive:0, formatter:"link", formatterParams:{
+            label:"link",
+            urlField:"itemLink",
+            target:"_blank",
+        }}
+    ],
+});
+
+
+var tipkovniceTable = new Tabulator("#tipkovnice", {
+    ajaxURL: myFiles["tipkovnice"],
+    height:"800px",
+    layout:"fitColumns",
+    responsiveLayout:true,
+    columns:[
+        {title:"Info", field:"itemInfo", minWidth:300, sorter:"string", headerFilter:"input", responsive:0},
+        {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" kn",
+            symbolAfter:" kn",
+            precision:0,
+        }},
+        {title:"Promjena", field:"percentChange", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:"%",
+            symbolAfter:"%",
+            precision:0,
+        }},
+        {title:"Razlika", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" kn",
+            symbolAfter:" kn",
+            precision:0,
+        }},
+        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
+        }},
+        {title:"Link", field:"itemLink", width:70, responsive:0, formatter:"link", formatterParams:{
+            label:"link",
+            urlField:"itemLink",
+            target:"_blank",
+        }}
+    ],
+});
+
+
+var slusaliceTable = new Tabulator("#slusalice", {
+    ajaxURL: myFiles["slusalice"],
+    height:"800px",
+    layout:"fitColumns",
+    responsiveLayout:true,
+    columns:[
+        {title:"Info", field:"itemInfo", minWidth:300, sorter:"string", headerFilter:"input", responsive:0},
+        {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" kn",
+            symbolAfter:" kn",
+            precision:0,
+        }},
+        {title:"Promjena", field:"percentChange", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:"%",
+            symbolAfter:"%",
+            precision:0,
+        }},
+        {title:"Razlika", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" kn",
+            symbolAfter:" kn",
+            precision:0,
+        }},
+        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
+        }},
+        {title:"Link", field:"itemLink", width:70, responsive:0, formatter:"link", formatterParams:{
+            label:"link",
+            urlField:"itemLink",
+            target:"_blank",
+        }}
+    ],
+});
+
+
+var ramTable = new Tabulator("#ram", {
+    ajaxURL: myFiles["ram"],
+    height:"800px",
+    layout:"fitColumns",
+    responsiveLayout:true,
+    columns:[
+        {title:"Info", field:"itemInfo", minWidth:300, sorter:"string", headerFilter:"input", responsive:0},
+        {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" kn",
+            symbolAfter:" kn",
+            precision:0,
+        }},
+        {title:"Promjena", field:"percentChange", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:"%",
+            symbolAfter:"%",
+            precision:0,
+        }},
+        {title:"Razlika", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" kn",
+            symbolAfter:" kn",
+            precision:0,
+        }},
+        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
+        }},
+        {title:"Link", field:"itemLink", width:70, responsive:0, formatter:"link", formatterParams:{
+            label:"link",
+            urlField:"itemLink",
+            target:"_blank",
+        }}
+    ],
+});
+
+
+var sisaciTable = new Tabulator("#sisaci", {
+    ajaxURL: myFiles["sisaci"],
+    height:"800px",
+    layout:"fitColumns",
+    responsiveLayout:true,
+    columns:[
+        {title:"Info", field:"itemInfo", minWidth:300, sorter:"string", headerFilter:"input", responsive:0},
+        {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" kn",
+            symbolAfter:" kn",
+            precision:0,
+        }},
+        {title:"Promjena", field:"percentChange", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:"%",
+            symbolAfter:"%",
+            precision:0,
+        }},
+        {title:"Razlika", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" kn",
