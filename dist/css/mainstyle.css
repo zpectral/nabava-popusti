@@ -33,7 +33,7 @@
 
 .tabulator-col-title {
     display: inline;
-    padding-right: 20px;
+    padding-right: 10px !important;
 }
 
 .tabulator-header-filter {
@@ -44,5 +44,7 @@
 
 .tabulator-header-filter > input {
     padding: 0px !important;
+    min-width: 200px !important;
+    width: 80% !important;
 }
 
