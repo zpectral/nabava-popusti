@@ -77,6 +77,18 @@ function openTab(evt, targetid) {
         case 'misParent':
             miseviTable.redraw();
             break;
+        case 'tipParent':
+            tipkovniceTable.redraw();
+            break;
+        case 'slusParent':
+            slusaliceTable.redraw();
+            break;
+        case 'sisParent':
+            sisaciTable.redraw();
+            break;
+        case 'ramParent':
+            ramTable.redraw();
+            break;
         default:
             console.log("default? why?");
     }
