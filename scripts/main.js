@@ -123,6 +123,11 @@ var monitoriTable= new Tabulator("#monitori", {
             symbolAfter:" kn",
             precision:0,
         }},
+        {title:"Update", field:"dateUpdated", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
+        }},
         {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
             outputFormat:"DD-MM-YYYY",
@@ -164,6 +169,11 @@ var procesoriTable = new Tabulator("#procesori", {
             symbol:" kn",
             symbolAfter:" kn",
             precision:0,
+        }},
+        {title:"Update", field:"dateUpdated", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
         }},
         {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
@@ -207,6 +217,11 @@ var grafickeTable = new Tabulator("#graficke-kartice", {
             symbolAfter:" kn",
             precision:0,
         }},
+        {title:"Update", field:"dateUpdated", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
+        }},
         {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
             outputFormat:"DD-MM-YYYY",
@@ -248,6 +263,11 @@ var miseviTable = new Tabulator("#misevi", {
             symbol:" kn",
             symbolAfter:" kn",
             precision:0,
+        }},
+        {title:"Update", field:"dateUpdated", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
         }},
         {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
@@ -291,6 +311,11 @@ var tipkovniceTable = new Tabulator("#tipkovnice", {
             symbolAfter:" kn",
             precision:0,
         }},
+        {title:"Update", field:"dateUpdated", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
+        }},
         {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
             outputFormat:"DD-MM-YYYY",
@@ -332,6 +357,11 @@ var slusaliceTable = new Tabulator("#slusalice", {
             symbol:" kn",
             symbolAfter:" kn",
             precision:0,
+        }},
+        {title:"Update", field:"dateUpdated", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
         }},
         {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
@@ -375,6 +405,11 @@ var ramTable = new Tabulator("#ram", {
             symbolAfter:" kn",
             precision:0,
         }},
+        {title:"Update", field:"dateUpdated", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
+        }},
         {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
             outputFormat:"DD-MM-YYYY",
@@ -416,6 +451,11 @@ var sisaciTable = new Tabulator("#sisaci", {
             symbol:" kn",
             symbolAfter:" kn",
             precision:0,
+        }},
+        {title:"Update", field:"dateUpdated", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
         }},
         {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
