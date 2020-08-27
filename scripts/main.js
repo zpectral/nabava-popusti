@@ -15,7 +15,9 @@ var myFiles = { monitori: "https://zpectral.github.io/nabava-popusti/data/monito
                 procesori: "https://zpectral.github.io/nabava-popusti/data/procesori.json",
                 tipkovnice: "https://zpectral.github.io/nabava-popusti/data/tipkovnice.json",
                 sisaci: "https://zpectral.github.io/nabava-popusti/data/sisaci-i-trimeri.json",
-                slusalice: "https://zpectral.github.io/nabava-popusti/data/gaming-slusalice.json" 
+                hdd: "https://zpectral.github.io/nabava-popusti/data/cvrsti-diskovi.json",
+                ssd: "https://zpectral.github.io/nabava-popusti/data/ssd-disk.json",
+                slusalice: "https://zpectral.github.io/nabava-popusti/data/gaming-slusalice.json"
             };
 
 // where you want to store the data
@@ -93,6 +95,99 @@ function openTab(evt, targetid) {
 
 var monitoriTable= new Tabulator("#monitori", {
     ajaxURL: myFiles["monitori"],
+    height:"800px",
+    layout:"fitColumns",
+    responsiveLayout:true,
+    columns:[
+        {title:"Info", field:"itemInfo", minWidth:300, sorter:"string", headerFilter:"input", responsive:0},
+        {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" kn",
+            symbolAfter:" kn",
+            precision:0,
+        }},
+        {title:"Promjena", field:"percentChange", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:"%",
+            symbolAfter:"%",
+            precision:0,
+        }},
+        {title:"Razlika", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" kn",
+            symbolAfter:" kn",
+            precision:0,
+        }},
+        {title:"Update", field:"dateUpdated", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
+        }},
+        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
+        }},
+        {title:"Link", field:"itemLink", width:70, responsive:0, formatter:"link", formatterParams:{
+            label:"link",
+            urlField:"itemLink",
+            target:"_blank",
+        }}
+    ],
+});
+
+var hddTable= new Tabulator("#hdd", {
+    ajaxURL: myFiles["hdd"],
+    height:"800px",
+    layout:"fitColumns",
+    responsiveLayout:true,
+    columns:[
+        {title:"Info", field:"itemInfo", minWidth:300, sorter:"string", headerFilter:"input", responsive:0},
+        {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" kn",
+            symbolAfter:" kn",
+            precision:0,
+        }},
+        {title:"Promjena", field:"percentChange", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:"%",
+            symbolAfter:"%",
+            precision:0,
+        }},
+        {title:"Razlika", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" kn",
+            symbolAfter:" kn",
+            precision:0,
+        }},
+        {title:"Update", field:"dateUpdated", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
+        }},
+        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
+        }},
+        {title:"Link", field:"itemLink", width:70, responsive:0, formatter:"link", formatterParams:{
+            label:"link",
+            urlField:"itemLink",
+            target:"_blank",
+        }}
+    ],
+});
+
+
+var ssdTable= new Tabulator("#ssd", {
+    ajaxURL: myFiles["ssd"],
     height:"800px",
     layout:"fitColumns",
     responsiveLayout:true,
