@@ -84,6 +84,12 @@ function openTab(evt, targetid) {
         case 'slusParent':
             slusaliceTable.redraw();
             break;
+        case 'hddParent':
+            hddTable.redraw();
+            break;
+        case 'ssdParent':
+            ssdTable.redraw();
+            break;
         case 'sisParent':
             sisaciTable.redraw();
             break;
