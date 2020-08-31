@@ -104,6 +104,9 @@ var monitoriTable= new Tabulator("#monitori", {
     height:"800px",
     layout:"fitColumns",
     responsiveLayout:true,
+    initialSort:[             
+		{column:"percentChange", dir:"asc"},
+	],
     columns:[
         {title:"Info", field:"itemInfo", minWidth:300, sorter:"string", headerFilter:"input", responsive:0},
         {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
@@ -150,6 +153,9 @@ var hddTable= new Tabulator("#hdd", {
     height:"800px",
     layout:"fitColumns",
     responsiveLayout:true,
+    initialSort:[             
+		{column:"percentChange", dir:"asc"},
+	],
     columns:[
         {title:"Info", field:"itemInfo", minWidth:300, sorter:"string", headerFilter:"input", responsive:0},
         {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
@@ -197,6 +203,9 @@ var ssdTable= new Tabulator("#ssd", {
     height:"800px",
     layout:"fitColumns",
     responsiveLayout:true,
+    initialSort:[             
+		{column:"percentChange", dir:"asc"},
+	],
     columns:[
         {title:"Info", field:"itemInfo", minWidth:300, sorter:"string", headerFilter:"input", responsive:0},
         {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
@@ -244,6 +253,9 @@ var procesoriTable = new Tabulator("#procesori", {
     height:"800px",
     layout:"fitColumns",
     responsiveLayout:true,
+    initialSort:[             
+		{column:"percentChange", dir:"asc"},
+	],
     columns:[
         {title:"Info", field:"itemInfo", minWidth:300, sorter:"string", headerFilter:"input", responsive:0},
         {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
@@ -291,6 +303,9 @@ var grafickeTable = new Tabulator("#graficke-kartice", {
     height:"800px",
     layout:"fitColumns",
     responsiveLayout:true,
+    initialSort:[             
+		{column:"percentChange", dir:"asc"},
+	],
     columns:[
         {title:"Info", field:"itemInfo", minWidth:300, sorter:"string", headerFilter:"input", responsive:0},
         {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
@@ -338,6 +353,9 @@ var miseviTable = new Tabulator("#misevi", {
     height:"800px",
     layout:"fitColumns",
     responsiveLayout:true,
+    initialSort:[             
+		{column:"percentChange", dir:"asc"},
+	],
     columns:[
         {title:"Info", field:"itemInfo", minWidth:300, sorter:"string", headerFilter:"input", responsive:0},
         {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
@@ -385,6 +403,9 @@ var tipkovniceTable = new Tabulator("#tipkovnice", {
     height:"800px",
     layout:"fitColumns",
     responsiveLayout:true,
+    initialSort:[             
+		{column:"percentChange", dir:"asc"},
+	],
     columns:[
         {title:"Info", field:"itemInfo", minWidth:300, sorter:"string", headerFilter:"input", responsive:0},
         {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
@@ -432,6 +453,9 @@ var slusaliceTable = new Tabulator("#slusalice", {
     height:"800px",
     layout:"fitColumns",
     responsiveLayout:true,
+    initialSort:[             
+		{column:"percentChange", dir:"asc"},
+	],
     columns:[
         {title:"Info", field:"itemInfo", minWidth:300, sorter:"string", headerFilter:"input", responsive:0},
         {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
@@ -479,6 +503,9 @@ var sisaciTable = new Tabulator("#sisaci", {
     height:"800px",
     layout:"fitColumns",
     responsiveLayout:true,
+    initialSort:[             
+		{column:"percentChange", dir:"asc"},
+	],
     columns:[
         {title:"Info", field:"itemInfo", minWidth:300, sorter:"string", headerFilter:"input", responsive:0},
         {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
