@@ -1,0 +1,27 @@
+{
+  "homepage": "https://zpectral.github.io/nabava-popusti",
+  "name": "nabava-popusti",
+  "version": "1.0.0",
+  "description": "Prikazuje podatke o promjeni cijena, sa stranice nabava.net.",
+  "main": "index.html",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zpectral/nabava-popusti.git"
+  },
+  "keywords": [
+    "nabava",
+    "popusti"
+  ],
+  "author": "Dario Krešan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zpectral/nabava-popusti/issues"
+  }
+}
