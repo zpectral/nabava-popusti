@@ -9,16 +9,13 @@ var loadFile = function (filePath, done) {
     xhr.send();
 }
 // paths to all of your files
-var myFiles = { monitori: "https://zpectral.github.io/nabava-popusti/data/monitori.json",
-                graficke: "https://zpectral.github.io/nabava-popusti/data/graficke-kartice.json",
-                misevi: "https://zpectral.github.io/nabava-popusti/data/misevi.json",
-                procesori: "https://zpectral.github.io/nabava-popusti/data/procesori.json",
-                tipkovnice: "https://zpectral.github.io/nabava-popusti/data/tipkovnice.json",
-                sisaci: "https://zpectral.github.io/nabava-popusti/data/sisaci-i-trimeri.json",
-                hdd: "https://zpectral.github.io/nabava-popusti/data/cvrsti-diskovi.json",
-                ssd: "https://zpectral.github.io/nabava-popusti/data/ssd-disk.json",
-                slusalice: "https://zpectral.github.io/nabava-popusti/data/gaming-slusalice.json"
-            };
+var myFiles = { 
+    graficke: "https://zpectral.github.io/nabava-popusti/data/graficke-kartice.json",
+    misevi: "https://zpectral.github.io/nabava-popusti/data/gaming-misevi.json",
+    procesori: "https://zpectral.github.io/nabava-popusti/data/procesori.json",
+    tipkovnice: "https://zpectral.github.io/nabava-popusti/data/tipkovnice.json",
+    slusalice: "https://zpectral.github.io/nabava-popusti/data/gaming-slusalice.json"
+};
 
 // where you want to store the data
 var jsonData = [];
