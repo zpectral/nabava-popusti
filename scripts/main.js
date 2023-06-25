@@ -109,9 +109,16 @@ var procesoriTable = new Tabulator("#procesori", {
         {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
-            symbol:" kn",
-            symbolAfter:" kn",
-            precision:0,
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
+        }},
+        {title:"Prosječna", field:"itemAvgPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
         }},
         {title:"Promjena", field:"percentChange", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
@@ -123,9 +130,9 @@ var procesoriTable = new Tabulator("#procesori", {
         {title:"Razlika", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
-            symbol:" kn",
-            symbolAfter:" kn",
-            precision:0,
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
         }},
         {title:"Update", field:"dateUpdated", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
@@ -159,9 +166,16 @@ var grafickeTable = new Tabulator("#graficke-kartice", {
         {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
-            symbol:" kn",
-            symbolAfter:" kn",
-            precision:0,
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
+        }},
+        {title:"Prosječna", field:"itemAvgPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
         }},
         {title:"Promjena", field:"percentChange", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
@@ -173,9 +187,9 @@ var grafickeTable = new Tabulator("#graficke-kartice", {
         {title:"Razlika", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
-            symbol:" kn",
-            symbolAfter:" kn",
-            precision:0,
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
         }},
         {title:"Update", field:"dateUpdated", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
@@ -209,9 +223,16 @@ var miseviTable = new Tabulator("#misevi", {
         {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
-            symbol:" kn",
-            symbolAfter:" kn",
-            precision:0,
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
+        }},
+        {title:"Prosječna", field:"itemAvgPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
         }},
         {title:"Promjena", field:"percentChange", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
@@ -223,9 +244,9 @@ var miseviTable = new Tabulator("#misevi", {
         {title:"Razlika", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
-            symbol:" kn",
-            symbolAfter:" kn",
-            precision:0,
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
         }},
         {title:"Update", field:"dateUpdated", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
@@ -259,9 +280,16 @@ var tipkovniceTable = new Tabulator("#tipkovnice", {
         {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
-            symbol:" kn",
-            symbolAfter:" kn",
-            precision:0,
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
+        }},
+        {title:"Prosječna", field:"itemAvgPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
         }},
         {title:"Promjena", field:"percentChange", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
@@ -273,9 +301,9 @@ var tipkovniceTable = new Tabulator("#tipkovnice", {
         {title:"Razlika", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
-            symbol:" kn",
-            symbolAfter:" kn",
-            precision:0,
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
         }},
         {title:"Update", field:"dateUpdated", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
@@ -309,9 +337,16 @@ var slusaliceTable = new Tabulator("#slusalice", {
         {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
-            symbol:" kn",
-            symbolAfter:" kn",
-            precision:0,
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
+        }},
+        {title:"Prosječna", field:"itemAvgPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
         }},
         {title:"Promjena", field:"percentChange", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
@@ -323,9 +358,9 @@ var slusaliceTable = new Tabulator("#slusalice", {
         {title:"Razlika", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
-            symbol:" kn",
-            symbolAfter:" kn",
-            precision:0,
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
         }},
         {title:"Update", field:"dateUpdated", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
