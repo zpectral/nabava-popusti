@@ -10,6 +10,7 @@ var loadFile = function (filePath, done) {
 }
 // paths to all of your files
 var myFiles = { 
+    monitori: "https://zpectral.github.io/nabava-popusti/data/monitori.json",
     graficke: "https://zpectral.github.io/nabava-popusti/data/graficke-kartice.json",
     misevi: "https://zpectral.github.io/nabava-popusti/data/gaming-misevi.json",
     procesori: "https://zpectral.github.io/nabava-popusti/data/procesori.json",
@@ -95,6 +96,61 @@ function openTab(evt, targetid) {
     }
 } 
 
+var monitoriTable = new Tabulator("#monitori", {
+    ajaxURL: myFiles["monitori"],
+    height:"800px",
+    layout:"fitColumns",
+    responsiveLayout:true,
+    initialSort:[             
+		{column:"percentChange", dir:"asc"},
+	],
+    columns:[
+        {title:"Info", field:"itemInfo", minWidth:300, sorter:"string", headerFilter:"input", responsive:0},
+        {title:"Cijena", field:"itemPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
+        }},
+        {title:"Prosječna", field:"itemAvgPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
+        }},
+        {title:"Promjena", field:"percentChange", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:"%",
+            symbolAfter:"%",
+            precision:0,
+        }},
+        {title:"Razlika", field:"priceChange", align:"right", width:90, responsive:2, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
+        }},
+        {title:"Update", field:"dateUpdated", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
+        }},
+        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+            inputFormat:"DD-MM-YYYY",
+            outputFormat:"DD-MM-YYYY",
+            invalidPlaceholder:"(invalid date)",
+        }},
+        {title:"Link", field:"itemLink", width:70, responsive:0, formatter:"link", formatterParams:{
+            label:"link",
+            urlField:"itemLink",
+            target:"_blank",
+        }}
+    ],
+});
 
 var procesoriTable = new Tabulator("#procesori", {
     ajaxURL: myFiles["procesori"],
