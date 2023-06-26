@@ -113,7 +113,14 @@ var monitoriTable = new Tabulator("#monitori", {
             symbolAfter:" €",
             precision:2,
         }},
-        {title:"Prosječna", field:"itemAvgPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+        {title:"Avg", field:"itemAvgPrice", align:"right", width:90, responsive:1, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
+        }},
+        {title:"Bazna", field:"itemBasePrice", align:"right", width:90, responsive:1, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" €",
@@ -139,7 +146,7 @@ var monitoriTable = new Tabulator("#monitori", {
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
         }},
-        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:2, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
@@ -169,7 +176,14 @@ var procesoriTable = new Tabulator("#procesori", {
             symbolAfter:" €",
             precision:2,
         }},
-        {title:"Prosječna", field:"itemAvgPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+        {title:"Avg", field:"itemAvgPrice", align:"right", width:90, responsive:1, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
+        }},
+        {title:"Bazna", field:"itemBasePrice", align:"right", width:90, responsive:1, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" €",
@@ -195,7 +209,7 @@ var procesoriTable = new Tabulator("#procesori", {
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
         }},
-        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:2, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
@@ -226,7 +240,14 @@ var grafickeTable = new Tabulator("#graficke-kartice", {
             symbolAfter:" €",
             precision:2,
         }},
-        {title:"Prosječna", field:"itemAvgPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+        {title:"Avg", field:"itemAvgPrice", align:"right", width:90, responsive:1, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
+        }},
+        {title:"Bazna", field:"itemBasePrice", align:"right", width:90, responsive:1, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" €",
@@ -252,7 +273,7 @@ var grafickeTable = new Tabulator("#graficke-kartice", {
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
         }},
-        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:2, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
@@ -283,7 +304,14 @@ var miseviTable = new Tabulator("#misevi", {
             symbolAfter:" €",
             precision:2,
         }},
-        {title:"Prosječna", field:"itemAvgPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+        {title:"Avg", field:"itemAvgPrice", align:"right", width:90, responsive:1, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
+        }},
+        {title:"Bazna", field:"itemBasePrice", align:"right", width:90, responsive:1, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" €",
@@ -309,7 +337,7 @@ var miseviTable = new Tabulator("#misevi", {
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
         }},
-        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:2, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
@@ -340,7 +368,14 @@ var tipkovniceTable = new Tabulator("#tipkovnice", {
             symbolAfter:" €",
             precision:2,
         }},
-        {title:"Prosječna", field:"itemAvgPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+        {title:"Avg", field:"itemAvgPrice", align:"right", width:90, responsive:1, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
+        }},
+        {title:"Bazna", field:"itemBasePrice", align:"right", width:90, responsive:1, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" €",
@@ -366,7 +401,7 @@ var tipkovniceTable = new Tabulator("#tipkovnice", {
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
         }},
-        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:2, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
@@ -397,7 +432,14 @@ var slusaliceTable = new Tabulator("#slusalice", {
             symbolAfter:" €",
             precision:2,
         }},
-        {title:"Prosječna", field:"itemAvgPrice", align:"right", width:90, responsive:0, sorter:"number", formatter:"money", formatterParams:{
+        {title:"Avg", field:"itemAvgPrice", align:"right", width:90, responsive:1, sorter:"number", formatter:"money", formatterParams:{
+            decimal:",",
+            thousand:".",
+            symbol:" €",
+            symbolAfter:" €",
+            precision:2,
+        }},
+        {title:"Bazna", field:"itemBasePrice", align:"right", width:90, responsive:1, sorter:"number", formatter:"money", formatterParams:{
             decimal:",",
             thousand:".",
             symbol:" €",
@@ -423,7 +465,7 @@ var slusaliceTable = new Tabulator("#slusalice", {
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
         }},
-        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:1, sorter:"date", formatter:"datetime", formatterParams:{
+        {title:"Dodano", field:"dateAdded", align:"right", width:90, responsive:2, sorter:"date", formatter:"datetime", formatterParams:{
             inputFormat:"DD-MM-YYYY",
             outputFormat:"DD-MM-YYYY",
             invalidPlaceholder:"(invalid date)",
